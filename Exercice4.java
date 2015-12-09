@@ -16,7 +16,8 @@ class Exercice4 {
         System.out.println("Veuillez saisir la ponderation (%) d'Examen3:");
         float ex3p = sc.nextFloat();
         float moyenne = (5*((ex1*(ex1p/100))+(ex2*(ex2p/100))+(ex3*(ex3p/100))));
-        System.out.println("Note moyenne = " + moyenne + "%");
+        DecimalFormat numberFormat = new DecimalFormat("#.0");
+        System.out.println("Note moyenne = " + numberFormat.format(moyenne) + "%");
         
 	}
 
